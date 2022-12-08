@@ -1,0 +1,28 @@
+{
+  "name": "crystal-wiki-backend",
+  "version": "1.0.0",
+  "description": "## Date: 12/07/2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aizealawin/Crystal-Wiki-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aizealawin/Crystal-Wiki-Backend/issues"
+  },
+  "homepage": "https://github.com/aizealawin/Crystal-Wiki-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "sequelize": "^6.26.0"
+  }
+}
