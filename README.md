@@ -35,11 +35,11 @@ This app, the Crystal Wiki, is designed to be the perfect malleable tool for any
 
 #### **_Entity Relationship Diagram:_**
 
-![Entity Relationship Diagram](tbd 'Entity Relationship Diagram')
+![Entity Relationship Diagram](./public/CrystalERD.drawio.png 'Entity Relationship Diagram')
 
 ### **_Planning_**
 
-#### [Crystal Wiki Trello Board](https://trello.com/b/Q1r3U2MG/gp3-foodie-review)
+#### [Crystal Wiki Trello Board](https://trello.com/b/YmmK91N3/crystal-pern-stack)
 
 ### **_License_**
 
