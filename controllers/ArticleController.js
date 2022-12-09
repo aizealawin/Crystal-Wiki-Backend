@@ -11,7 +11,7 @@ const GetArticles = async (req, res) => {
 
 const GetArticleById = async (req, res) => {
   try {
-    const article = await Article.findByPk(req.params.Article_Id)
+    const article = await Article.findByPk(req.params.articleId)
     res.send(article)
   } catch (error) {
     throw error
@@ -31,7 +31,7 @@ const UpdateArticle = async (req, res) => {
   try {
     const article = await Article.update(
       { ...req.body },
-      { where: { id: req.params.Article_Id }, returning: true }
+      { where: { id: req.params.articleId }, returning: true }
     )
     res.send(article)
   } catch (error) {
@@ -41,8 +41,8 @@ const UpdateArticle = async (req, res) => {
 
 const DeleteArticle = async (req, res) => {
   try {
-    let articleId = parseInt(req.params.Article_Id)
-    await Article.destroy({ where: { id: ArticleId } })
+    let articleId = parseInt(req.params.articleId)
+    await Article.destroy({ where: { id: articleId } })
     res.send({
       msg: `Article with ID of ${articleId} Deleted`
     })
