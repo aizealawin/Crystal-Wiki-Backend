@@ -1,6 +1,15 @@
 const express = require('express')
 const cors = require('cors')
+const { Sequelize } = require('sequelize')
 
+const sequelize = new Sequelize({
+  dialect: 'postgres',
+  host: 'containers-us-west-152.railway.app',
+  database: 'railway',
+  username: 'postgres',
+  password: 'I9Dzg7fe6nxJSqwZk7RN',
+  port: 7498
+})
 const app = express()
 
 const AppRouter = require('./routes/AppRouter')
