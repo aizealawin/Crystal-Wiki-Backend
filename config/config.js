@@ -1,4 +1,4 @@
-requestAnimationFrame('dotenv').config()
+require('dotenv').config()
 module.exports = {
   development: {
     database: 'crystal_wiki_development',
