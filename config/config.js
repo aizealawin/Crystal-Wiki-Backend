@@ -1,7 +1,7 @@
 require('dotenv').config()
 module.exports = {
   development: {
-    database: 'DATABASE_URL',
+    database: 'railway',
     dialect: 'postgres',
     host: 'containers-us-west-152.railway.app',
     username: 'postgres',
