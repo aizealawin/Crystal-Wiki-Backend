@@ -2,7 +2,7 @@
   "name": "crystal-wiki-backend",
   "version": "1.0.0",
   "description": "## Date: 12/07/2022",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
@@ -27,5 +27,8 @@
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "sequelize": "^6.26.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.5"
   }
 }
