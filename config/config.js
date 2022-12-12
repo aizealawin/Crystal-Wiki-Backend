@@ -3,10 +3,10 @@ module.exports = {
   development: {
     database: 'railway',
     dialect: 'postgres',
-    host: 'containers-us-west-152.railway.app',
-    username: 'postgres',
-    password: 'I9Dzg7fe6nxJSqwZk7RN',
-    port: 7498
+    host: process.env.DATABASE_HOST,
+    username: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    port: process.env.PGPORT
   },
   test: {
     database: 'crystal_wiki_test',
