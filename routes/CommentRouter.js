@@ -3,9 +3,9 @@ const controller = require('../controllers/CommentController')
 // const middleware = require('../middleware')
 
 Router.get('/', controller.GetComments)
-Router.get('/:comment_Id', controller.GetCommentById)
+Router.get('/:commentId', controller.GetCommentById)
 Router.post('/create', controller.CreateComment)
-Router.put('/:comment_Id', controller.UpdateComment)
-Router.delete('/:comment_Id', controller.DeleteComment)
+Router.put('/:commentId', controller.UpdateComment)
+Router.delete('/:commentId', controller.DeleteComment)
 
 module.exports = Router
