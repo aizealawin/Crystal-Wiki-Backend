@@ -4,6 +4,12 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     try {
+      await queryInterface.addColumn('articles', 'alignment', {
+        type: Sequelize.TEXT
+      })
+      await queryInterface.addColumn('articles', 'category', {
+        type: Sequelize.TEXT
+      })
       await queryInterface.addColumn('articles', 'domains', {
         type: Sequelize.STRING
       })
@@ -25,6 +31,7 @@ module.exports = {
       await queryInterface.addColumn('articles', 'commandments', {
         type: Sequelize.TEXT
       })
+
       return Promise.resolve()
     } catch (e) {
       return Promise.reject(e)
@@ -33,6 +40,8 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     try {
+      await queryInterface.removeColumn('articles', 'alignment')
+      await queryInterface.removeColumn('articles', 'category')
       await queryInterface.removeColumn('articles', 'domains')
       await queryInterface.removeColumn('articles', 'pantheon')
       await queryInterface.removeColumn('articles', 'symbol')
