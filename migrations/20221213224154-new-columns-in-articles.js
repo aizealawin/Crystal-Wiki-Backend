@@ -17,13 +17,13 @@ module.exports = {
         type: Sequelize.STRING
       })
       await queryInterface.addColumn('articles', 'depiction', {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       })
       await queryInterface.addColumn('articles', 'enemies', {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       })
       await queryInterface.addColumn('articles', 'commandments', {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       })
       return Promise.resolve()
     } catch (e) {
