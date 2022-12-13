@@ -16,7 +16,16 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       content: DataTypes.TEXT,
       image: DataTypes.STRING,
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      alignment: DataTypes.STRING,
+      category: DataTypes.STRING,
+      domains: DataTypes.STRING,
+      pantheon: DataTypes.STRING,
+      symbol: DataTypes.STRING,
+      symbolImage: DataTypes.STRING,
+      depiction: DataTypes.TEXT,
+      enemies: DataTypes.TEXT,
+      commandments: DataTypes.TEXT
     },
     {
       sequelize,
