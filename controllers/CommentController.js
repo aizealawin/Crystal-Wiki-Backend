@@ -18,6 +18,16 @@ const GetCommentById = async (req, res) => {
   }
 }
 
+const GetCommentByArticle = async (req, res) => {
+  try {
+    const comments = await Comment.findAll({
+      where: { articleId: req.params.articleId }
+    })
+    res.send(comments)
+  } catch (error) {
+    throw error
+  }
+}
 const CreateComment = async (req, res) => {
   try {
     const comment = await Comment.create({ ...req.body })
@@ -56,5 +66,6 @@ module.exports = {
   GetCommentById,
   CreateComment,
   UpdateComment,
-  DeleteComment
+  DeleteComment,
+  GetCommentByArticle
 }
