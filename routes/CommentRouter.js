@@ -4,6 +4,7 @@ const controller = require('../controllers/CommentController')
 
 Router.get('/', controller.GetComments)
 Router.get('/:commentId', controller.GetCommentById)
+Router.get('/:articleId', controller.GetCommentByArticle)
 Router.post('/create', controller.CreateComment)
 Router.put('/:commentId', controller.UpdateComment)
 Router.delete('/:commentId', controller.DeleteComment)
