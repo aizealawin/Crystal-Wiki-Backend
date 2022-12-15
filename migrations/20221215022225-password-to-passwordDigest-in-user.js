@@ -18,11 +18,9 @@ module.exports = {
         isEmail: true
       }
     })
-    await queryInterface.renameColumn('users', 'password', 'passwordDigest')
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.renameColumn('users', 'passwordDigest', 'password')
     await queryInterface.changeColumn('users', 'name', {
       type: Sequelize.STRING
     })
